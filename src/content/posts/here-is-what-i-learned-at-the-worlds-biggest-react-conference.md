@@ -1,19 +1,18 @@
 ---
-template: post
 title: Here’s what I learned at the world’s biggest React conference
 slug: here-is-what-i-learned-at-the-worlds-biggest-react-conference
 draft: false
 date: 2018-04-24T13:10:27.395Z
-description: >-
-  On Friday, April 13th, I attended the biggest React conference in the world:
-  React Amsterdam. Together with 1200 frontend and full-stack developers from
-  across the globe, we gathered in the tech heart of Europe for an event with
-  over 25 speakers.
 category: article
-image: img/scott-graham-5fNmWej4tAA-unsplash.jpg
 tags:
   - react
   - events
+template: post
+description: "On Friday, April 13th, I attended the biggest React conference in
+  the world: React Amsterdam. Together with 1200 frontend and full-stack
+  developers from across the globe, we gathered in the tech heart of Europe for
+  an event with over 25 speakers."
+image: /assets/img/3175c72101f0a9c86632-1-.jpg
 ---
 
 On Friday, April 13th, three colleagues and I from [Inspire](https://www.inspire.nl/) attended the biggest React conference in the world:[React Amsterdam](https://react.amsterdam/). Together with 1200 frontend and full stack developers from across the globe, we gathered in the tech heart of Europe for an event with over 25 speakers.
