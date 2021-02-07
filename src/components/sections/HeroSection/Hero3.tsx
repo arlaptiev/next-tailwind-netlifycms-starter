@@ -14,7 +14,7 @@ const Hero3: React.FC<Props> = ({ title, description, image }): JSX.Element => {
           
           className="object-cover object-center w-5/6 mb-10 rounded lg:w-2/6 md:w-3/6"
           alt="hero"
-          src={`/${image}`}
+          src={image}
           
         />
         <div className="w-full text-center lg:w-2/3">

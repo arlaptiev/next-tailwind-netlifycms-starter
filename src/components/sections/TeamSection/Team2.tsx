@@ -16,7 +16,7 @@ const Team2: React.FC<Props> = ({ team }) => {
                 
                 alt="team"
                 className="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 bg-gray-100 rounded-full"
-                src={`/${team.image}`}
+                src={team.image}
                 
               />
               <div className="flex-grow">

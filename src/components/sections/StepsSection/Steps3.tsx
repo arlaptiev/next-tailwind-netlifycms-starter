@@ -30,7 +30,7 @@ const Steps3: React.FC<Props> = ({ image, steps }) => {
         <Image
           
           className="block object-cover object-center w-2/3 mx-auto mb-10 rounded xl:w-1/4 lg:w-1/3 md:w-1/2"
-          src={`/${image}`}
+          src={image}
           alt="step"
           
         />

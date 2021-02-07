@@ -12,7 +12,7 @@ const Posts1: React.FC<{
           <Image
             
             className="object-cover object-center w-full lg:h-48 md:h-36"
-            src={`/${post.attributes.image}`}
+            src={post.attributes.image}
             alt="blog"
             
           />

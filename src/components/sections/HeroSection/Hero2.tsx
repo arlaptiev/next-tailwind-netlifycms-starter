@@ -15,7 +15,7 @@ const Hero2: React.FC<Props> = ({ title, description, image }): JSX.Element => {
             
             className="object-cover object-center rounded"
             alt="hero"
-            src={`/${image}`}
+            src={image}
             
           />
         </div>
