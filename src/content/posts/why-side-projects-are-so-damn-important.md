@@ -1,19 +1,18 @@
 ---
-template: post
 title: Why side projects are so damn important
 slug: why-side-projects-are-so-damn-important
 draft: false
 date: 2017-12-19T10:43:43.435Z
-description: >-
-  Side projects come in many forms and have lots of different purposes. Some
-  people start them to create a nice product and eventually build a successful
-  company, but there are many other reasons why working on side projects can be
-  exceptionally important.
 category: article
-image: img/annie-spratt-QckxruozjRg-unsplash.jpg
 tags:
   - side-projects
   - startup
+template: post
+description: Side projects come in many forms and have lots of different
+  purposes. Some people start them to create a nice product and eventually build
+  a successful company, but there are many other reasons why working on side
+  projects can be exceptionally important.
+image: /assets/img/b1f6505381d612d60643.jpg
 ---
 
 Trello, Craigslist, Unsplash, AppSumo, Twitter, Gmail… what do all these successful companies have in common?
