@@ -5,7 +5,7 @@ hero_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
   do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
   minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
   commodo consequat.
-hero_image: img/serverless-saas.jpg
+hero_image: /assets/img/nextjs-starter-banner.png
 feature_version: 1
 feature_title: Our amazing features
 feature_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -55,26 +55,26 @@ steps:
       retro.
 
     name: FINISH
-steps_image: img/nesa-by-makers-IgUR1iX0mqM-unsplash.jpg
+steps_image: /assets/img/31f6b002d009b3481723.jpg
 pricing_title: Simple Pricing
 pricing_description: Start free. Upgrade whenever you want.
 plans:
   - description: Try out for free
     name: Free Plan
-    price: '0'
+    price: "0"
     usps:
       - Fingerstache disrupt
       - Franzen hashtag
-  - description: 'For the hobbyist '
+  - description: "For the hobbyist "
     name: Starter Plan
-    price: '29'
+    price: "29"
     usps:
       - All features included in Free Plan
       - Tilde art party
       - Banh mi cornhole
   - description: For the Pros
     name: Pro Plan
-    price: '49'
+    price: "49"
     usps:
       - All features included in Hobby Plan
       - Waistcoat squid hexagon
@@ -88,35 +88,31 @@ team:
   - name: Holden Jones
     photo: /img/ayo-ogunseinde-sibvworyqs0-unsplash.jpg
     position: Vue Developer
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
       mauris erat, porttitor eleifend elit sed, maximus imperdiet risus. Cras
       elit felis, feugiat sit amet rhoncus sed, rhoncus eu ipsum.
-    image: img/ayo-ogunseinde-sibvworyqs0-unsplash.jpg
+    image: /assets/img/91c57713e35503360986.jpg
   - name: Alper Kamuu
     photo: /img/foto-sushi-6anudmpilw4-unsplash.jpg
     position: UX Designer
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
       mauris erat, porttitor eleifend elit sed, maximus imperdiet risus. Cras
       elit felis, feugiat sit amet rhoncus sed, rhoncus eu ipsum.
-    image: img/foto-sushi-6anudmpilw4-unsplash.jpg
+    image: /assets/img/e146104240a992d5e7e5.jpg
   - name: Atticus Finch
     photo: /img/kal-visuals-b1hg7qi-zcc-unsplash.jpg
     position: UI Developer
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
       mauris erat, porttitor eleifend elit sed, maximus imperdiet risus. Cras
       elit felis, feugiat sit amet rhoncus sed, rhoncus eu ipsum.
-    image: img/harps-joseph-tavpde7fxgy-unsplash.jpg
+    image: /assets/img/0196b0723069839062e6.jpg
   - name: Henry Letham
     photo: /img/harps-joseph-tavpde7fxgy-unsplash.jpg
     position: Designer
-    description:
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
       mauris erat, porttitor eleifend elit sed, maximus imperdiet risus. Cras
       elit felis, feugiat sit amet rhoncus sed, rhoncus eu ipsum.
-    image: img/kal-visuals-b1hg7qi-zcc-unsplash.jpg
+    image: /assets/img/c1e579554682b2d3f315.jpg
 blog_version: 1
 blog_title: From our blog
 blog_description: Read more about how we develop software
