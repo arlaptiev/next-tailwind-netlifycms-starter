@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image from 'utils/Image';
+import Image from 'next/image';
 
 const Posts1: React.FC<{
   posts: { attributes: any }[];
@@ -9,13 +9,15 @@ const Posts1: React.FC<{
     {posts?.map((post, i) => (
       <div className="p-4 md:w-1/3" key={i}>
         <div className="flex flex-col h-full overflow-hidden border-2 border-gray-200 rounded-lg">
-          <Image
-            
-            className="object-cover object-center w-full lg:h-48 md:h-36"
-            src={post.attributes.image}
-            alt="blog"
-            
-          />
+          <div className="relative w-full lg:h-48 md:h-36">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              src={post.attributes.image}
+              alt="blog"   
+            />
+          </div>
           <div className="p-6">
             <h2 className="mb-1 text-xs font-medium tracking-widest text-gray-500 title-font">
               {post.attributes.category}

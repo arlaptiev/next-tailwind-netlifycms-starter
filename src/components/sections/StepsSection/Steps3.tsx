@@ -27,13 +27,15 @@ const Steps3: React.FC<Props> = ({ image, steps }) => {
             );
           })}
         </div>
-        <Image
-          
-          className="block object-cover object-center w-2/3 mx-auto mb-10 rounded xl:w-1/4 lg:w-1/3 md:w-1/2"
-          src={image}
-          alt="step"
-          
-        />
+        <div className="relative w-2/3 mx-auto mb-10 rounded xl:w-1/4 lg:w-1/3 md:w-1/2" style={{paddingTop: "50%"}}>
+          <Image
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            src={image}
+            alt="step"
+          />
+        </div>
         <div className="flex flex-col w-full text-center">
           <h1 className="mb-4 text-xl font-medium text-gray-900 title-font">
             {steps[0].name}

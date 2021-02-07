@@ -1,5 +1,5 @@
 import { Team } from 'interfaces/home';
-import Image from 'utils/Image';
+import Image from 'next/image';
 
 interface Props {
   team: Team[];
@@ -12,13 +12,14 @@ const Team1: React.FC<Props> = ({ team }) => {
         return (
           <div className="p-4 lg:w-1/2" key={i}>
             <div className="flex flex-col items-center justify-center h-full text-center sm:flex-row sm:justify-start sm:text-left">
-              <Image
-                
-                alt="team"
-                className="flex-shrink-0 object-cover object-center w-48 h-48 mb-4 rounded-lg sm:mb-0"
-                src={team.image}
-                
-              />
+              <div className="relative flex-shrink-0 w-48 h-48 mb-4 rounded-lg sm:mb-0">
+                <Image
+                  layout="fill"
+                  objectFit="contain"
+                  alt="team"
+                  src={team.image} 
+                />
+              </div>
               <div className="flex-grow sm:pl-8">
                 <h2 className="text-lg font-medium text-gray-900 title-font">
                   {team.name}

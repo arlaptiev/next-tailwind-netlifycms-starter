@@ -1,4 +1,4 @@
-import Image from 'utils/Image';
+import Image from 'next/image';
 
 interface Props {
   title: string;
@@ -24,13 +24,13 @@ const Hero1: React.FC<Props> = ({ title, description, image }): JSX.Element => {
             </button>
           </div>
         </div>
-        <div className="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
+        <div className="relative w-5/6 rounded-lg lg:max-w-lg lg:w-full md:w-1/2" style={{paddingTop: "50%"}}>
           <Image
-            
-            className="object-cover object-center rounded-lg"
+            layout="fill"
+            objectFit="contain"
+            objectPosition="center"
             alt="hero"
             src={image}
-            
           />
         </div>
       </div>

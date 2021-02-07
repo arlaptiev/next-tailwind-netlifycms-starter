@@ -1,4 +1,4 @@
-import Image from 'utils/Image';
+import Image from 'next/image';
 
 interface Post {
   attributes: {
@@ -94,11 +94,14 @@ const BlogCard: React.FC<{ post: Post; version: number }> = ({
 
   return (
     <div className="flex flex-col h-full overflow-hidden border-2 border-gray-200 rounded-lg">
-      <Image 
-        className="object-cover object-center w-full lg:h-48 md:h-36"
-        src={attributes.image}
-        alt="blog" 
-      />
+      <div className="relative w-full lg:h-48 md:h-36">
+        <Image 
+          layout="fill"
+          objectFit="cover"
+          src={attributes.image}
+          alt="blog" 
+        />
+      </div>
       <div className="p-6">
         <h2 className="mb-1 text-xs font-medium tracking-widest text-gray-500 title-font">
           {attributes.category}

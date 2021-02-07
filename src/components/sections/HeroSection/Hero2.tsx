@@ -1,4 +1,4 @@
-import Image from 'utils/Image';
+import Image from 'next/image';
 
 interface Props {
   title: string;
@@ -10,13 +10,13 @@ const Hero2: React.FC<Props> = ({ title, description, image }): JSX.Element => {
   return (
     <section className="text-gray-700 body-font">
       <div className="container flex flex-col items-center px-5 py-24 mx-auto md:flex-row">
-        <div className="w-5/6 mb-10 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0">
+        <div className="relative w-5/6 mb-10 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0" style={{paddingTop: "150%"}}>
           <Image
-            
-            className="object-cover object-center rounded"
+            layout="fill"
+            objectFit="contain"
+            objectPosition="center"
             alt="hero"
             src={image}
-            
           />
         </div>
         <div className="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 md:items-start md:text-left">

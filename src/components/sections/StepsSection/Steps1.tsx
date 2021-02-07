@@ -1,6 +1,6 @@
 import { Step } from 'interfaces/home';
 import { getIcon } from 'utils/getIcon';
-import Image from 'utils/Image';
+import Image from 'next/image';
 
 interface Props {
   image: string;
@@ -12,7 +12,7 @@ const Steps1: React.FC<Props> = ({ image, steps }) => {
     <section className="text-gray-700 body-font">
       <div className="container flex flex-wrap px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full">
-          <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+          <div className="lg:w-2/5 md:w-full md:pr-10 md:py-6">
             {steps?.map((step, i) => {
               return (
                 <div className="relative flex pb-12" key={i}>
@@ -34,13 +34,15 @@ const Steps1: React.FC<Props> = ({ image, steps }) => {
               );
             })}
           </div>
-          <Image
-            
-            className="object-cover object-center mt-12 rounded-lg lg:w-3/5 md:w-1/2 md:mt-0"
-            src={image}
-            alt="step"
-            
-          />
+          <div className="hidden md:block relative mt-12 rounded-lg lg:w-3/5" style={{paddingTop: "50%"}}>
+            <Image
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              src={image}
+              alt="step"
+            />
+          </div>
         </div>
       </div>
     </section>

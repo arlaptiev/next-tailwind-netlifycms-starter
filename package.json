@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "caniuse-lite": "^1.0.30001185",
+    "image-size": "^0.9.3",
     "netlify-cms-app": "2.12.25",
     "next": "^10.0.4",
     "next-seo": "^4.17.0",
@@ -24,6 +25,7 @@
     "@next/bundle-analyzer": "^10.0.4",
     "@types/node": "^14.14.19",
     "@types/react": "^17.0.0",
+    "@types/webpack-env": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^4.11.1",
     "autoprefixer": "^10.1.0",
     "eslint": "^7.17.0",
