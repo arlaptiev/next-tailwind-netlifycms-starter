@@ -2,7 +2,7 @@ export default {
   cms_manual_init: true,
   backend: {
     name: 'github',
-    repo: 'arlaptiev/next-tailwind-netlify-cms-starter',
+    repo: 'arlaptiev/next-tailwind-netlifycms-starter',
     branch: 'main',
   },
   media_folder: 'public/assets/img',

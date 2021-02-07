@@ -13,4 +13,4 @@ const Image = (props: any) => (
   </>
 );
 
-export { Image };
+export default Image;

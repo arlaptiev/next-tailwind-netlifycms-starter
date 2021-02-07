@@ -1,41 +1,73 @@
 import React from 'react';
 
-import { Main } from '../components/layouts/Main';
-import { Image } from '../utils/Image';
-import { Meta } from '../utils/Meta';
+import { Default } from 'components/layouts/Default';
+import BlogSection from 'components/sections/BlogSection';
+import FeatureSection from 'components/sections/FeatureSection';
+import HeroSection from 'components/sections/HeroSection';
+import PricingSection from 'components/sections/PricingSection';
+import StepsSection from 'components/sections/StepsSection';
+import TeamSection from 'components/sections/TeamSection';
+import { HomeAttributes } from 'interfaces/home';
+import { GetStaticProps } from 'next';
+import { Meta } from 'utils/Meta';
 
-const Index = () => (
-  <Main
-    meta={
-      <Meta description="Next js Boilerplate is the perfect starer code for your project. Build your React application with Next.js framework." />
-    }
-  >
-    <div className="relative w-full" style={{ paddingTop: '50%' }}>
-      <a href="https://github.com/ixartz/Next-js-Boilerplate">
-        <Image
-          src={`${process.env.baseUrl}/assets/img/nextjs-starter-banner.png`}
-          alt="Nextjs starter banner"
+interface Props {
+  content: { attributes: HomeAttributes };
+}
+
+const HomePage = (props: Props) => {
+  const { attributes } = props.content;
+
+  return (
+    <>
+      <Default
+        meta={
+          <Meta description="Next js Boilerplate is the perfect starer code for your project. Build your React application with Next.js framework." />
+        }
+      >
+        <HeroSection
+          version={attributes.hero_version}
+          title={attributes.hero_title}
+          description={attributes.hero_description}
+          image={attributes.hero_image}
         />
-      </a>
-    </div>
-    <h1 className="font-bold text-2xl">
-      Boilerplate code for your Nextjs project with Tailwind CSS
-    </h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis augue tempor tellus
-      convallis euismod.
-    </p>
-    <p>
-      Duis metus felis, pretium sed ex in, dignissim rutrum velit. Cras finibus, tellus quis maximus
-      aliquet, ipsum nunc dapibus orci, non feugiat risus neque sed libero. Cras porttitor pulvinar
-      sodales.
-    </p>
-    <p>
-      Etiam vel augue tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada
-      fames ac turpis egestas. Nulla ornare dapibus nulla, vitae viverra nisl varius a. Donec
-      scelerisque ipsum et orci lacinia, vitae imperdiet libero fringilla.
-    </p>
-  </Main>
-);
+        <FeatureSection
+          version={attributes.feature_version}
+          title={attributes.feature_title}
+          description={attributes.feature_description}
+          features={attributes.features}
+        />
+        <StepsSection
+          version={attributes.steps_version}
+          steps={attributes.steps}
+          image={attributes.steps_image}
+        />
+        <PricingSection
+          title={attributes.pricing_title}
+          description={attributes.pricing_description}
+          plans={attributes.plans}
+        />
+        <TeamSection
+          version={attributes.team_version}
+          title={attributes.team_title}
+          description={attributes.team_description}
+          team={attributes.team}
+        />
+        <BlogSection
+          version={attributes.blog_version}
+          title={attributes.blog_title}
+          description={attributes.blog_description}
+          slugs={attributes.posts}
+        />
+      </Default>
+    </>
+  );
+};
 
-export default Index;
+export const getStaticProps: GetStaticProps = async () => {
+  const content = await import(`../content/pages/${'home'}.md`);
+
+  return { props: { content: content.default } };
+};
+
+export default HomePage;

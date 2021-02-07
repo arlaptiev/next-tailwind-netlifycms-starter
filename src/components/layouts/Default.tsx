@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 import { Config } from '../../utils/Config';
 
-type IMainProps = {
+type DefaultProps = {
   meta: ReactNode;
   children: ReactNode;
 };
 
-const Main = (props: IMainProps) => (
+const Default = (props: DefaultProps) => (
   <div className="antialiased w-full text-gray-700">
     {props.meta}
 
@@ -71,4 +71,4 @@ const Main = (props: IMainProps) => (
   </div>
 );
 
-export { Main };
+export { Default };
