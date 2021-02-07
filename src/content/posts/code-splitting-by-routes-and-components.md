@@ -1,20 +1,19 @@
 ---
-template: post
 title: Code Splitting by Routes and Components
 slug: code-splitting-by-routes-and-components
 draft: false
 date: 2020-01-22T15:50:13.245Z
-description: >-
-  When your app's bundle starts to grow it will slow things down. That's why we
-  see a lot more use of code-splitting in modern web development. This is a
-  simple tutorial on how to implement code-splitting by routes and by components
-  in React using React Loadable.
 category: tutorials
-image: img/headway-jfR5wu2hMI0-unsplash.jpg
 tags:
   - react
   - code-splitting
   - tutorials
+template: post
+description: When your app's bundle starts to grow it will slow things down.
+  That's why we see a lot more use of code-splitting in modern web development.
+  This is a simple tutorial on how to implement code-splitting by routes and by
+  components in React using React Loadable.
+image: /assets/img/9166a0422019c33817e7.jpg
 ---
 
 When your app's bundle starts to grow it will slow things down. That's why we see a lot more use of code-splitting in modern web development. Code-splitting is the process of taking one large bundle containing your entire app, and splitting them up into multiple smaller bundles which contain separate parts of your app. This technique allows you to load chunks of code only when needed.
