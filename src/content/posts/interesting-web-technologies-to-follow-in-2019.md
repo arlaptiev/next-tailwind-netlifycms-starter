@@ -1,17 +1,9 @@
 ---
-template: post
-title: "Interesting Web Technologies to follow in\_2019"
+title: Interesting Web Technologies to follow in 2019
 slug: interesting-web-technologies-to-follow-in-2019
 draft: false
 date: 2019-01-09T18:34:51.420Z
-description: >-
-  The world of web development is constantly changing and it is a challenge to
-  keep a close eye on everything that is going on. Which frameworks will still
-  be relevant in the coming year? And which programming language is most
-  suitable for your web application? Let’s discuss six interesting technologies
-  for web development.
 category: article
-image: img/xps-ezyq1hol5_8-unsplash.jpg
 tags:
   - react
   - vue
@@ -20,6 +12,13 @@ tags:
   - exlixer
   - phoenix
   - graphql
+template: post
+description: The world of web development is constantly changing and it is a
+  challenge to keep a close eye on everything that is going on. Which frameworks
+  will still be relevant in the coming year? And which programming language is
+  most suitable for your web application? Let’s discuss six interesting
+  technologies for web development.
+image: /assets/img/a1358781a1b9a41802f4.jpg
 ---
 
 The world of web development is constantly changing and it is a challenge to keep a close eye on everything that is going on. Which frameworks will still be relevant in the coming year? And which programming language is most suitable for your web application? Let’s discuss six interesting technologies for web development.
