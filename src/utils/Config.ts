@@ -6,8 +6,8 @@ export const Config = {
   content_type: 'website',
   preview_image: {
     url: '/assets/img/nextjs-starter-banner.png',
-    width: 800,
-    height: 400,
+    width: 1200,
+    height: 600,
     alt: 'Start your next project with this boilerplate banner'
   },
   theme_primary_color: '#000000',

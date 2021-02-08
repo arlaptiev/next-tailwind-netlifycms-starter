@@ -1,3 +1,5 @@
+import Footer from 'components/sections/Footer';
+import Header from 'components/sections/Header';
 import React, { ReactNode } from 'react';
 
 type Props = {
@@ -7,8 +9,10 @@ type Props = {
 
 const DefaultLayout = (props: Props) => (
   <>
+    <Header />
     {props.meta}
     {props.children}
+    <Footer />
   </>
 );
 
