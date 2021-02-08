@@ -1,5 +1,30 @@
 module.exports = {
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  purge: {
+    mode: 'all',
+    content: [
+      './src/pages/**/*.{js,jsx,ts,tsx}',
+      './src/components/**/*.{js,jsx,ts,tsx}',
+      './next.config.js',
+    ],
+    options: {
+      extractors: [
+        {
+          extensions: [],
+          extractor: (content) => {
+            // Capture as liberally as possible, including things like `h-(screen-1.5)`
+            const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [];
+
+            // Capture classes within other delimiters like .block(class="w-1/2") in Pug
+            const innerMatches =
+              content.match(/[^<>"'`\s.(){}[\]#=%]*[^<>"'`\s.(){}[\]#=%:]/g) ||
+              [];
+
+            return broadMatches.concat(innerMatches);
+          },
+        },
+      ],
+    },
+  },
   darkMode: false,
   theme: {
     fontSize: {
@@ -42,5 +67,9 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
+  future: {
+    purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true,
+  },
 };

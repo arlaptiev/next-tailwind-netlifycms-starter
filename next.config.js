@@ -11,11 +11,11 @@ module.exports = withBundleAnalyzer({
   env: {
     baseUrl: baseUrl,
   },
-  webpack: (cfg) => {
-    cfg.module.rules.push({
+  webpack: (config) => {
+    config.module.rules.push({
       test: /\.md$/,
       loader: 'frontmatter-markdown-loader',
     });
-    return cfg;
+    return config;
   },
 });

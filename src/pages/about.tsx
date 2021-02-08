@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Default } from '../components/layouts/Default';
+import DefaultLayout from '../components/layouts/DefaultLayout';
 import { Meta } from '../utils/Meta';
 
 const About = () => (
-  <Default meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+  <DefaultLayout meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione fuga recusandae quidem.
       Quaerat molestiae blanditiis doloremque possimus labore voluptatibus distinctio recusandae
@@ -15,7 +15,7 @@ const About = () => (
       Quaerat molestiae blanditiis doloremque possimus labore voluptatibus distinctio recusandae
       autem esse explicabo molestias officia placeat, accusamus aut saepe.
     </p>
-  </Default>
+  </DefaultLayout>
 );
 
 export default About;

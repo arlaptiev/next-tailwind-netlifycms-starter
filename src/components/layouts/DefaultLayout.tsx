@@ -1,15 +1,15 @@
 import React, { ReactNode } from 'react';
 
-type DefaultProps = {
+type Props = {
   meta: ReactNode;
   children: ReactNode;
 };
 
-const Default = (props: DefaultProps) => (
+const DefaultLayout = (props: Props) => (
   <>
     {props.meta}
     {props.children}
   </>
 );
 
-export { Default };
+export default DefaultLayout;

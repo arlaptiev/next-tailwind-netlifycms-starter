@@ -17,7 +17,7 @@ const BlogSection: React.FC<{
 
   useEffect(() => {
     const getPosts = async () => {
-      const postsPromises = await slugs.map(async (slug) => import(`../../../content/posts/${slug}.md`));
+      const postsPromises = await slugs.map(async (slug) => import(`content/posts/${slug}.md`));
 
       Promise.all(postsPromises).then(setPosts);
     };

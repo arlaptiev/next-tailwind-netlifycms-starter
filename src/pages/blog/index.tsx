@@ -1,14 +1,14 @@
 import { GetStaticProps, NextPage } from 'next';
 
-import { Default } from 'components/layouts/Default';
+import DefaultLayout from 'components/layouts/DefaultLayout';
 import BlogCard from 'components/sections/BlogCard';
 import React from 'react';
 import { Meta } from 'utils/Meta';
 
 const BlogPage: NextPage<{ posts: any[] }> = ({ posts }) => {
   return (
-    <Default meta={
-      <Meta description="Next js Boilerplate is the perfect starer code for your project. Build your React application with Next.js framework." />
+    <DefaultLayout meta={
+      <Meta />
     }>
       <div className="min-h-screen px-4 pt-16 pb-20 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="mx-auto max-w-7xl">
@@ -30,7 +30,7 @@ const BlogPage: NextPage<{ posts: any[] }> = ({ posts }) => {
           </div>
         </div>
       </div>
-    </Default>
+    </DefaultLayout>
   );
 };
 

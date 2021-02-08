@@ -5,18 +5,27 @@ import Head from 'next/head';
 
 import { Config } from './Config';
 
-type MetaProps = {
+type Props = {
   title?: string;
   description?: string;
   canonical?: string;
+  type?: string;
+  image?: any;
+  locale?: string;
+  site_name?: string;
 } & typeof defaultProps;
 
 const defaultProps = {
   title: Config.title,
   description: Config.description,
+  type: Config.content_type,
+  image: Config.preview_image,
+  locale: Config.locale,
+  site_name: Config.site_name
 };
 
-const Meta = (props: MetaProps) => (
+
+const Meta = (props: Props) => (
   <>
     <Head>
       <meta charSet="UTF-8" />
@@ -77,8 +86,10 @@ const Meta = (props: MetaProps) => (
         title: props.title,
         description: props.description,
         url: props.canonical,
-        locale: Config.locale,
-        site_name: Config.site_name,
+        type: props.type,
+        images: [props.image],
+        locale: props.locale,
+        site_name: props.site_name,
       }}
     />
   </>
