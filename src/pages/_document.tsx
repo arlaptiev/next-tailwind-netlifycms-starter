@@ -13,6 +13,19 @@ class MyDocument extends Document {
       <Html lang={Config.locale}>
         <Head>
           <GoogleAnalytics4 />
+          <link
+            rel="preload"
+            href="/assets/fonts/Neuzeit Grotesk Regular.woff"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/assets/fonts/ITC Avant Garde Pro Bold.woff"
+            as="font"
+            crossOrigin=""
+          />
+          <link rel="stylesheet" href="/fonts/fonts.css" />
         </Head>
         <body>
           <Main />
